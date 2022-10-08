@@ -7,6 +7,17 @@ Recovering a clean image from noisy input image through representing the image u
 
 Resulted in ~99.4% accuracy.
 
+## Demonstration
+
+Noisy
+
+![noisy](Bayesnoise_textbook.png)
+
+Recovered Image
+
+![recovered](Bayes_textbook.png)
+
+
 ## Technical Details
 
 The noisy image $y_i \in \lbrace -1, +1 \rbrace$  indexed by the pixels $i = 1, ... , D$  in the lattice is obtained by randomly flipping the signs of the pixels of the noise free image $x_i \in \lbrace -1, +1 \rbrace$ with some probability.
@@ -34,3 +45,7 @@ coordinate-descent algorithm:
 2. For each $x_i$ , fix the neighborhood and see whether $- x_i$ would decrease the energy, if so flip $-x_i$.
 3. Stop when no changes can be made for $\mathbf{x}$.
 4. Optimize parameters $h, \beta > \eta$ until desired recovery accuracy.
+
+## Tools
+
+</a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
